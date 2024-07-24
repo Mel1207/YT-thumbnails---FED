@@ -7,22 +7,22 @@ export const categories = [
   },
   {
     id: 2, 
-    title: 'Sports',
+    title: 'YT Shorts',
     value: 'sports'
   },
   {
     id: 3, 
-    title: 'Technology',
+    title: 'Vue Multi Step series',
     value: 'technology'
   },
   {
     id: 4, 
-    title: 'Nature',
+    title: 'Vue Accordion Series',
     value: 'nature'
   },
   {
     id: 5, 
-    title: 'Food',
+    title: 'HTML + CSS',
     value: 'food'
   },
 ]
