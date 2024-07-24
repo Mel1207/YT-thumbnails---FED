@@ -126,6 +126,10 @@ a {
   border: 1px solid #6877FF;
   color: #6877FF;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.category-list .category-item:hover {
+  transform: translateY(-5px);
 }
 .category-list .active {
   color: #ffffff;
