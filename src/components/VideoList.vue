@@ -16,8 +16,8 @@ import { ref } from 'vue'
 const videos = ref([])
 
 const getVideos = () => {
-  const serviceAPI = import.meta.env.VITE_SERVICE_API
-  fetch(serviceAPI)
+  // const serviceAPI = import.meta.env.VITE_SERVICE_API
+  fetch(import.meta.env.VITE_SERVICE_API)
   .then(res => res.json())
   .then(data => {
     videos.value = data.items
