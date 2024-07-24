@@ -1,0 +1,83 @@
+*, html 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body 
+  font-family: $font-primary
+  background: $dWhite
+  color: $cBlack
+
+ul 
+  list-style: none 
+
+a 
+  text-decoration: none
+
+.container
+  width: 100%
+  max-width: 1280px
+  margin: 0 auto
+  padding: 0 15px
+
+.hero 
+  padding: 200px 0 100px 0
+  display: flex 
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+  h1 
+    text-align: center 
+    font-size: 50px
+    font-weight: 700
+
+  p 
+    text-align: center
+    padding: 25px 0 40px 0
+    line-height: 25px
+    color: $cGray
+
+  .cta-buttons
+    display: flex
+    gap: 20px
+
+.category-list 
+  display: flex
+  gap: 15px 
+  justify-content: center
+
+  .category-item 
+    padding: 8px 15px
+    border-radius: 20px
+    border: 1px solid $cViolet
+    color: $cViolet
+    cursor: pointer
+
+  .active 
+    color: $cWhite
+    background: $cViolet
+    
+.video-list 
+  margin-top: 40px
+
+  .video-thumbnails 
+    display: grid 
+    grid-template-columns: repeat(3, 1fr)
+    gap: 25px
+
+  .video-item 
+    border-radius: 15px
+    overflow: hidden
+    height: 260px
+
+    img 
+      height: 100%
+      width: 100%
+      object-fit: cover
+      transition: 0.3s ease
+      cursor: pointer
+
+    &:hover
+      img 
+        transform: scale(1.05)
