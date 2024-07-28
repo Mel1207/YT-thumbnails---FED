@@ -11,16 +11,29 @@
       </li>
     </ul>
   </div>
+
+  <VideoList v-if="currentCategory === 1"/>
+  <VideoList1 v-if="currentCategory === 2"/>
+  <VideoList2 v-if="currentCategory === 3"/>
+  <VideoList3 v-if="currentCategory === 4"/>
 </template>
 
 <script setup>
-import { categories } from '../constants/index'
-import { ref } from 'vue'
+import VideoList from './VideoList.vue'
+import VideoList1 from './VideoList1.vue'
+import VideoList2 from './VideoList2.vue'
+import VideoList3 from './VideoList3.vue'
 
-const currentCategory = ref(1)
+import { runGlobal } from '../composables/global'
+import { categories } from '../constants/index'
+
+
+
+const { currentCategory } = runGlobal()
 
 const activeCategory = (id) => {
   currentCategory.value = id
+  // console.log(currentCategory.value)
 }
 
 </script>

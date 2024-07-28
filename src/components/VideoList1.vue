@@ -10,8 +10,8 @@
 </template>
 
 <script setup>
-import { getAllThumbnails } from '../composables/getAllThumbnails'
+import { getPlaylist1 } from '../composables/getPlaylist1'
 
-const { videos } = getAllThumbnails()
-// const { videos } = getPlaylistItems()
+const { videos } = getPlaylist1()
+
 </script>

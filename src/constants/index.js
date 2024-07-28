@@ -3,26 +3,20 @@ export const categories = [
     id: 1, 
     title: 'All categories',
     value: 'all-category',
-    isActive: true,
   },
   {
     id: 2, 
-    title: 'YT Shorts',
-    value: 'sports'
+    title: 'Vue Multi Step series',
+    value: 'import.meta.env.VITE_PL1_ID'
   },
   {
     id: 3, 
-    title: 'Vue Multi Step series',
-    value: 'technology'
+    title: 'Vue Accordion Series',
+    value: 'import.meta.env.VITE_PL2_ID'
   },
   {
     id: 4, 
-    title: 'Vue Accordion Series',
-    value: 'nature'
-  },
-  {
-    id: 5, 
-    title: 'HTML + CSS',
-    value: 'food'
+    title: 'HTML + CSS Series',
+    value: 'import.meta.env.VITE_PL3_ID'
   },
 ]

@@ -4,7 +4,6 @@ export const getAllThumbnails = () => {
   const videos = ref([])
 
   const getVideos = () => {
-    // const serviceAPI = import.meta.env.VITE_SERVICE_API
     fetch(import.meta.env.VITE_SERVICE_API)
     .then(res => res.json())
     .then(data => {
